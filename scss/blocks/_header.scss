@@ -1,0 +1,42 @@
+// header
+@use "../varilables" as *;
+.header{
+    padding: 43px 0px;
+    
+    &__wrapper{
+     @include flex(space-between);
+    };
+    &__list{
+        @include flex(center);
+        gap: 33px;
+    };
+    &__link{
+        font-family: Barlow;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.92px;
+        text-transform: uppercase;
+        color: $Grey;
+
+    }
+    &__btn{
+        display: none;
+    }
+
+
+}
+@media (max-width:576px){
+    .header{
+        padding-top: 32px;
+        padding-bottom: 40px;
+
+        &__list{
+            display: none;
+        }
+        &__btn{
+            display: block;
+        }
+    }
+
+    }

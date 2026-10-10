@@ -1,0 +1,35 @@
+@use "../varilables" as *;
+
+.footer{
+    background-color: $DarkGreyBlue;
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 50px;   
+    padding-top: 47px;
+    padding-bottom: 47px;  
+
+    &__wrapper{
+        display: flex;
+    }
+    &__list{
+        display: flex;
+        margin-right: 365px;
+    }
+    &__item{
+        color: $Grey;
+        margin-right: 32px;
+        font-family: Barlow;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.92px;
+        text-transform: uppercase;
+
+    }
+    &__link{
+        margin-right: 100px;
+    }
+    &__social{
+        margin-left: 10px;
+    }
+}
